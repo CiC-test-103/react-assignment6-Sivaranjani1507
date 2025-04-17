@@ -1,0 +1,32 @@
+@import '../variables.css';
+
+.bold-text{
+    font-weight: var(--fw-bold);
+}
+
+.bold-text{
+    color:var(--clr-veryDarkGrayishBlue);
+  font-weight: var(--fw-bold);
+  font-size:1 rem;
+  padding: 0px 10px 10px 0;
+  justify-content: center;
+}
+.regular-text{
+    color: var(--clr-desaturatedDarkBlue);
+    font-weight: var(--fw-regular);
+    
+    padding: 0px 10px 10px 0;
+}
+ h2{
+    font-size:20px;
+ }
+ p{
+    font-size:var(--font-paragraph);
+ }
+ @media only screen and (max-width: 768px)
+{
+    h2{font-size: 1rem;
+        }
+    p{
+        font-size:1rem;
+    } }

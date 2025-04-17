@@ -1,0 +1,157 @@
+@import './variables.css';
+
+body{
+    margin:0;
+    padding:0;
+    background-color: var(--clr-lightGrayishBlue);
+    font-family:var(--ff-base);
+    display:block;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    
+}
+.main-container{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    padding:0;
+    margin:0;
+
+   
+   
+}
+
+.img-container{
+    width:300px;
+    height:280px;
+    padding:0;
+    margin:0;
+
+}
+
+.img-container img{
+    width:300px;
+    height:280px;
+    padding:0;
+    margin:0;
+    border-radius: 10px 0 0 10px;
+
+}
+
+.details-container{
+    width:450px;
+    height:280px;
+    padding:30px;
+    background-color: white;
+    border-radius:0 10px 10px 0;
+}
+
+.authorImg{
+    width:40px;
+    height:40px;
+    display:flex;
+    flex-direction: row;
+   
+}
+
+.authorImg img{
+    border-radius:50%;
+    padding:0;
+}
+
+.nameDetails{
+    display:inline-block;
+}
+
+.author-info{
+    display:flex;
+    flex-direction:row;
+    padding-left:0;
+}
+
+.share-icon{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border:none;
+    background-color:var(--clr-lightGrayishBlue);
+    position:relative;
+}
+.share-icon img{
+    width:15px;
+    height:15px;
+    position:absolute;
+    top:6px;
+    left:9px;
+   
+  
+}
+.author-info{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+   
+}
+
+section{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 10px 0px 0px;
+    
+}
+
+h5{
+    font-size:var(--font-paragraph );
+    color:var(--clr-veryDarkGrayishBlue);
+    font-weight: var(--fw-bold);
+    
+}
+p{
+    font-size:var(--font-paragraph );
+    color:var(--clr-desaturatedDarkBlue) ;  
+}
+  
+@media only screen and (max-width: 768px){
+    .main-container{
+        height:100vh;
+        width:100vw;
+        display:flex;
+        flex-direction:column;   
+    }
+    .img-container{
+        width:350px;
+        height:200px;
+        padding:0;
+        margin:0;
+        border-radius: 0px 10px 10px 0 ;
+    
+    }
+    
+.img-container img{
+    width:350px;
+    height:200px;
+    padding:0;
+    margin:0;
+    border-radius: 10px 10px 0px 0px;
+
+}
+    .details-container{
+        width:350px;
+        height:300px;
+        padding:30px;
+        padding-right:10px;
+        background-color: white;
+        border-radius:0 0px 10px 10px;
+    
+    }
+
+    section{
+        padding-bottom:0;
+        padding-top:30px;
+        padding-right:20px;
+    }
+}
